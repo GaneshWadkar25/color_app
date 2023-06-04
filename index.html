@@ -1,0 +1,25 @@
+<html>
+      <head>
+            <title>Color App by Ganesh</title>
+            <style>
+                   * { font-size:50px; }
+            </style>
+            <script>
+                    function cc()
+                    {
+                        event.preventDefault();
+                        let colors = ["orange","red","lightblue","blue","lightyellow","yellow","lightgreen","green","gray","pink"];
+                        let r = parseInt(Math.random() * colors.length)
+                        document.body.style.backgroundColor = colors[r];
+                    }
+            </script>
+      </head>
+      <body>
+      <center>
+              <h1 style="font-size:75;">Holi Hain!!!</h1>
+              <form onsubmit="cc()">
+                    <input type="submit" value="Mohe Rang De"/>
+              </form>
+      </center>
+      </body>
+</html>
